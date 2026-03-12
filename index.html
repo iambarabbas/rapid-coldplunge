@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAPID Cold Plunge & Sauna | Pacific Beach, San Diego</title>
-    <meta name="description" content="Modern contrast therapy for everyday wellness. Premium cold plunge and Finnish sauna experience in Pacific Beach, San Diego. Opening 2026.">
+    <meta name="description" content="Modern contrast therapy for everyday wellness. Premium cold plunge and Finnish sauna experience in Pacific Beach, San Diego.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -17,82 +16,86 @@
                     colors: {
                         'rapid-dark': '#161413',
                         'rapid-olive': '#7F8532',
-                        'rapid-olive-dark': '#6B7328',
                         'rapid-orange': '#C35912',
                         'rapid-cream': '#E8DFD0',
-                        'rapid-gray': '#1e1d1c',
+                        'rapid-gray': '#1C1B1A',
                     },
                     fontFamily: {
                         'sans': ['"Proxima Nova"', 'system-ui', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        'rapid': '4px 3px 3.9px 0 rgba(0, 0, 0, 0.15)',
-                    },
-                    borderRadius: {
-                        'rapid': '2px',
                     }
                 }
             }
         }
     </script>
     <style>
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
-        }
+        body { font-family: 'Proxima Nova', system-ui, sans-serif; }
+        .btn-shadow { box-shadow: 4px 3px 3.9px 0 rgba(0, 0, 0, 0.15); }
     </style>
 </head>
-<body class="bg-rapid-dark text-white font-sans">
+<body class="bg-rapid-dark text-white">
+
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-rapid-dark/90 backdrop-blur-sm border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="/" class="text-2xl font-semibold tracking-wider">RAP<span class="text-rapid-olive">I</span>D</a>
-            <div class="hidden md:flex items-center gap-8">
-                <a href="/" class="text-white/80 hover:text-white transition">Home</a>
-                <a href="sauna.html" class="text-white/80 hover:text-white transition">Sauna</a>
-                <a href="cold-plunge.html" class="text-white/80 hover:text-white transition">Cold Plunge</a>
-                <a href="pricing.html" class="text-white/80 hover:text-white transition">Pricing</a>
-                <a href="about.html" class="text-white/80 hover:text-white transition">About Us</a>
+    <nav class="fixed w-full z-50 bg-rapid-dark/95 backdrop-blur-sm">
+        <div class="max-w-[1440px] mx-auto px-12 py-4 flex items-center justify-between">
+            <a href="/" class="text-xl font-bold tracking-wide">RAPID</a>
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="/" class="text-white/90 hover:text-white">Home</a>
+                <a href="sauna.html" class="text-white/90 hover:text-white">Sauna</a>
+                <a href="cold-plunge.html" class="text-white/90 hover:text-white">Cold Plunge</a>
+                <a href="pricing.html" class="text-white/90 hover:text-white">Pricing</a>
+                <a href="about.html" class="text-white/90 hover:text-white">Our Story</a>
+                <a href="about.html" class="text-white/90 hover:text-white">About us</a>
             </div>
-            <a href="#founders-club" class="bg-rapid-orange hover:bg-rapid-orange/90 text-white px-6 py-4 rounded-rapid text-sm font-semibold shadow-rapid transition">Join Founders Club</a>
+            <a href="#founders-club" class="bg-rapid-orange text-white px-6 py-3 text-sm font-semibold btn-shadow" style="border-radius: 2px;">Join Founders Club</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center">
-        <div class="absolute inset-0 bg-[url('images/image%206.png')] bg-cover bg-center"></div>
-        <div class="absolute inset-0 hero-gradient"></div>
-        <div class="relative z-10 max-w-7xl mx-auto px-6">
-            <p class="text-rapid-olive text-sm font-medium tracking-wider mb-4">HEALTH & WELLNESS CLUB • SOUTHERN CALIFORNIA</p>
-            <h1 class="text-5xl md:text-7xl font-light leading-tight mb-6">
-                Modern contrast therapy<br>
-                <span class="font-medium">for everyday wellness</span>
-            </h1>
-            <p class="text-xl text-white/80 max-w-xl mb-8">
-                Sauna, cold plunge, and intentional recovery designed for resilience, mental restoration, longevity, and feeling good in your body every day.
-            </p>
-            <a href="#founders-club" class="inline-block bg-rapid-olive hover:bg-rapid-olive-dark text-white px-6 py-4 rounded-rapid font-semibold shadow-rapid transition">
-                Get Opening Updates
-            </a>
+    <section class="pt-24 pb-16 bg-rapid-dark">
+        <div class="max-w-[1440px] mx-auto px-12">
+            <div class="grid md:grid-cols-2 gap-12 items-center min-h-[600px]">
+                <div>
+                    <p class="text-rapid-olive text-xs font-semibold tracking-[0.2em] mb-6">HEALTH & WELLNESS CLUB · SOUTHERN CALIFORNIA</p>
+                    <h1 class="text-5xl font-bold leading-tight mb-6">
+                        Modern contrast therapy<br>for everyday wellness
+                    </h1>
+                    <p class="text-white/70 text-lg mb-8 max-w-md">
+                        Sauna, cold plunge, and intentional recovery designed for nervous system regulation, longevity, and feeling good in your body every day.
+                    </p>
+                    <a href="#founders-club" class="inline-block bg-rapid-olive text-white px-6 py-4 text-sm font-semibold btn-shadow" style="border-radius: 2px;">
+                        Get Opening Updates
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="images/Rectangle 4.png" alt="RAPID Sauna Interior" class="w-full h-[500px] object-cover" style="border-radius: 2px;">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Construction Update -->
-    <section class="bg-rapid-cream text-rapid-dark py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-start">
+    <section class="py-16 bg-rapid-cream text-rapid-dark">
+        <div class="max-w-[1440px] mx-auto px-12">
+            <div class="grid md:grid-cols-2 gap-16">
                 <div>
-                    <h2 class="text-3xl font-medium mb-4">Construction Update</h2>
-                    <p class="text-rapid-dark/70 mb-4">
-                        We're building one of the most advanced contrast therapy facilities in the country. Custom engineering and precision components require time to source and install.
+                    <h2 class="text-3xl font-bold mb-4">Construction Update</h2>
+                    <p class="text-rapid-dark/70 mb-6">
+                        We are transforming the space to feel like a calm, modern wellness lounge — not a gym locker room.
                     </p>
-                    <p class="text-rapid-dark/70">
-                        Follow along for updates → sign up below.
-                    </p>
+                    <div class="mb-2">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="text-rapid-dark/60">75% Complete</span>
+                            <span class="text-rapid-dark/60">Opening Fall 2025</span>
+                        </div>
+                        <div class="w-full bg-rapid-dark/20 h-2 rounded-full">
+                            <div class="bg-rapid-olive h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-8 rounded-rapid shadow-sm">
-                    <h3 class="text-xl font-medium mb-2">Founders spots are limited</h3>
-                    <p class="text-rapid-dark/70 text-sm">
-                        Limited to just 200 members. Membership waitlist fills up fast. No spam, only major updates.
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-3xl font-bold mb-3">Founders spots<br>are limited</h3>
+                    <p class="text-rapid-dark/70">
+                        Lock in wellness pricing now. You'll only be billed when we officially open.
                     </p>
                 </div>
             </div>
@@ -100,27 +103,27 @@
     </section>
 
     <!-- Secure Your Place -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
+    <section class="py-20 bg-rapid-dark">
+        <div class="max-w-[1440px] mx-auto px-12">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="relative h-[500px] rounded-rapid overflow-hidden">
-                    <img src="images/Rectangle 100.png" alt="RAPID Reception" class="absolute inset-0 w-full h-full object-cover">
+                <div>
+                    <img src="images/Rectangle 94.png" alt="RAPID Lounge" class="w-full h-[450px] object-cover" style="border-radius: 2px;">
                 </div>
                 <div>
-                    <p class="text-rapid-olive text-sm font-medium tracking-wider mb-4">LIMITED OPPORTUNITY</p>
-                    <h2 class="text-4xl font-medium mb-6">Secure your place in the inner circle</h2>
+                    <p class="text-rapid-olive text-xs font-semibold tracking-[0.2em] mb-4">LIMITED OPPORTUNITY</p>
+                    <h2 class="text-4xl font-bold mb-6">Secure your place in the inner circle</h2>
                     <p class="text-white/70 mb-8">
                         We are building more than a facility; we're building a community. Our Founders's Club is a small group of people that get early access, locked-in pricing, and VIP in everyone benefits for life.
                     </p>
                     
-                    <div class="grid md:grid-cols-2 gap-6 mb-8">
-                        <div class="bg-rapid-olive/20 p-6 rounded-rapid">
-                            <h4 class="text-rapid-olive font-medium mb-2">WHAT YOU GET NOW</h4>
-                            <p class="text-white/70 text-sm">Construction updates, behind-the-scenes access, and founder community.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-rapid-olive/20 p-6" style="border-radius: 2px;">
+                            <h4 class="text-rapid-olive text-sm font-bold mb-2">WHAT YOU GET NOW</h4>
+                            <p class="text-white/70 text-sm">Immediate "Founder" status in our digital community. Behind-the-scenes updates. First dibs on merch.</p>
                         </div>
-                        <div class="bg-rapid-olive/20 p-6 rounded-rapid">
-                            <h4 class="text-rapid-olive font-medium mb-2">WHAT YOU GET LATER</h4>
-                            <p class="text-white/70 text-sm">VIP access, locked-in for the first rate-increases and special perks.</p>
+                        <div class="bg-rapid-olive/20 p-6" style="border-radius: 2px;">
+                            <h4 class="text-rapid-olive text-sm font-bold mb-2">WHAT YOU GET LATER</h4>
+                            <p class="text-white/70 text-sm">VIP access, locked-in for the first rate-increases and special lifetime rate lock on membership at our lowest price ever.</p>
                         </div>
                     </div>
                 </div>
@@ -130,207 +133,215 @@
 
     <!-- Founding Members -->
     <section class="py-20 bg-rapid-gray">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-[1440px] mx-auto px-12">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <p class="text-rapid-olive text-sm font-medium tracking-wider mb-4">FOUNDERS CLUB • PRE-SALE</p>
-                    <h2 class="text-4xl font-medium mb-6">Founding members shape the space</h2>
-                    <p class="text-white/70 mb-6">
+                    <p class="text-rapid-olive text-xs font-semibold tracking-[0.2em] mb-4">FOUNDERS CLUB · PRE-SALE</p>
+                    <h2 class="text-4xl font-bold mb-6">Founding members<br>shape the space</h2>
+                    <p class="text-white/70 mb-8">
                         Join our first members who care about longevity, recovery, and building something meaningful — a place for real people, not performers, built for real results — not performance only.
                     </p>
                     
-                    <div class="bg-rapid-olive/20 p-6 rounded-rapid mb-6">
-                        <div class="flex items-center gap-4 mb-4">
-                            <img src="images/Rectangle 4.png" alt="RAPID" class="w-12 h-12 rounded-full object-cover">
-                            <span class="text-2xl font-semibold tracking-wider">RAP<span class="text-rapid-olive">I</span>D</span>
+                    <div class="bg-rapid-olive/20 p-8 mb-6" style="border-radius: 2px;">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-xl font-bold">RAPID</span>
                         </div>
-                        <ul class="space-y-2 text-white/80 text-sm mb-4">
+                        <ul class="space-y-2 text-white/80 text-sm mb-6">
                             <li>• Locked-in price. No rate increases.</li>
                             <li>• Early access (before public opening)</li>
                             <li>• Priority booking access</li>
                             <li>• Help us finalize the design & offerings</li>
                         </ul>
-                        <div class="text-3xl font-light mb-1">$129<span class="text-lg text-white/60">/mo</span> <span class="text-sm text-white/40">or $99/mo</span></div>
-                        <p class="text-white/50 text-xs">Billed any when above open. No charges today.</p>
+                        <div class="mb-4">
+                            <span class="text-4xl font-bold">$129</span>
+                            <span class="text-white/60">/mo</span>
+                            <span class="text-white/40 text-sm ml-2">or $99/mo</span>
+                        </div>
+                        <p class="text-white/50 text-xs">Billed only when above open. No charges today.</p>
                     </div>
                     
-                    <a href="#founders-club" class="inline-block bg-rapid-olive hover:bg-rapid-olive-dark text-white px-6 py-3 rounded-rapid font-semibold shadow-rapid transition">
+                    <a href="#founders-club" class="inline-block bg-rapid-olive text-white px-6 py-4 text-sm font-semibold btn-shadow" style="border-radius: 2px;">
                         Reserve Your Spot
                     </a>
                 </div>
-                <div class="relative h-[600px] rounded-rapid overflow-hidden">
-                    <img src="images/image 3.png" alt="RAPID Hallway" class="absolute inset-0 w-full h-full object-cover">
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
-                        <p class="text-2xl font-light italic">"No Ever Faster,<br>With Contrast Therapy"</p>
+                <div class="relative">
+                    <img src="images/image 3.png" alt="RAPID Hallway" class="w-full h-[600px] object-cover" style="border-radius: 2px;">
+                    <div class="absolute bottom-8 left-8 right-8">
+                        <p class="text-3xl font-light italic text-white">"No Ever Faster,<br>With Contrast Therapy"</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Full Width Image -->
+    <section class="h-[400px] relative">
+        <img src="images/image 3.png" alt="RAPID Facility" class="w-full h-full object-cover">
+    </section>
+
     <!-- The Practice -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="relative h-[400px] rounded-rapid overflow-hidden mb-16">
-                <img src="images/Rectangle 94.png" alt="RAPID Lounge" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/40"></div>
-            </div>
+    <section class="py-20 bg-rapid-dark">
+        <div class="max-w-[1440px] mx-auto px-12">
+            <h2 class="text-4xl font-bold text-center mb-16">The Practice</h2>
             
-            <h2 class="text-4xl font-medium text-center mb-16">The Practice</h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-rapid-olive/20 p-8 rounded-rapid">
-                    <p class="text-white/80 mb-4">We offer only sauna and cold plunge, nothing else, designed to enhance a single routine. The practice is rooted in centuries-old tradition and modern science.</p>
-                    <p class="text-white/60 text-sm">Tradition refined over thousands of years:</p>
-                    <ul class="text-white/60 text-sm mt-2 space-y-1">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-rapid-olive/20 p-8" style="border-radius: 2px;">
+                    <p class="text-white/80 mb-6">We offer only sauna and cold plunge, nothing else, designed to enhance a single routine. The practice is rooted in centuries-old tradition and modern science.</p>
+                    <p class="text-white/60 text-sm mb-3">Tradition refined over thousands of years:</p>
+                    <ul class="text-white/60 text-sm space-y-1">
                         <li>• reduced stress</li>
                         <li>• reduced inflammation</li>
                         <li>• clearer thinking</li>
                         <li>• improved sleep</li>
                     </ul>
+                    <p class="text-white/50 text-xs mt-4">Adding controlled contrasts rebuild the system.</p>
                 </div>
-                <div class="bg-rapid-olive/20 p-8 rounded-rapid">
-                    <p class="text-white/80 mb-4">Focusing on present effectiveness. Scientists are starting to understand what people have known with no double-muscle recovers. Start gently and stay consistent.</p>
+                <div class="bg-rapid-olive/20 p-8" style="border-radius: 2px;">
+                    <p class="text-white/80 mb-6">Focusing on present effectiveness. Scientists are starting to understand what people have known with no double-muscle recovers. Start gently and stay consistent.</p>
                     <ul class="text-white/60 text-sm space-y-1">
                         <li>• Heat relaxes</li>
                         <li>• Cold invigorates</li>
                         <li>• The cycle restores</li>
                     </ul>
                 </div>
-                <div class="bg-rapid-olive/20 p-8 rounded-rapid">
-                    <p class="text-white/80 mb-4">In an uncontrolled, variable setting, the ritual must be modified. Here, it can be perfected. Everything supports the sequence. Nothing is accidental.</p>
+                <div class="bg-rapid-olive/20 p-8" style="border-radius: 2px;">
+                    <p class="text-white/80 mb-6">In an uncontrolled, variable setting, the ritual must be modified. Here, it can be perfected. Everything supports the sequence. Nothing is accidental.</p>
                     <a href="about.html" class="inline-block text-rapid-olive hover:underline text-sm mt-4">Discover the Practice →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sauna & Cold Plunge Previews -->
+    <!-- Sauna & Cold Plunge -->
     <section class="py-20 bg-rapid-cream text-rapid-dark">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-[1440px] mx-auto px-12">
             <!-- Sauna -->
             <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
-                <div class="relative h-[400px] rounded-rapid overflow-hidden">
-                    <img src="images/Rectangle 4.png" alt="RAPID Sauna" class="absolute inset-0 w-full h-full object-cover">
+                <div>
+                    <img src="images/Rectangle 4.png" alt="RAPID Sauna" class="w-full h-[400px] object-cover" style="border-radius: 2px;">
                 </div>
                 <div>
-                    <p class="text-rapid-olive text-sm font-medium tracking-wider mb-2">SAUNA • DEEP HEAT</p>
-                    <h3 class="text-3xl font-medium mb-4">A calm, focused heat experience</h3>
+                    <p class="text-rapid-olive text-xs font-semibold tracking-[0.2em] mb-2">SAUNA · DEEP HEAT</p>
+                    <h3 class="text-3xl font-bold mb-4">A calm, focused heat experience</h3>
                     <p class="text-rapid-dark/70 mb-6">
                         Finnish-style sauna intentionally designed for steady, sustainable heat — not shock or extremes. Built over centuries. Now made better and more fitting faster and enter quickly.
                     </p>
-                    <a href="sauna.html" class="text-rapid-olive font-medium hover:underline">Learn about our sauna →</a>
+                    <a href="sauna.html" class="text-rapid-olive font-semibold hover:underline">Learn about our sauna →</a>
                 </div>
             </div>
             
             <!-- Cold Plunge -->
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
-                    <p class="text-rapid-olive text-sm font-medium tracking-wider mb-2">COLD PLUNGE</p>
-                    <h3 class="text-3xl font-medium mb-4">Cold that feels supportive, not extreme</h3>
+                    <p class="text-rapid-olive text-xs font-semibold tracking-[0.2em] mb-2">COLD PLUNGE</p>
+                    <h3 class="text-3xl font-bold mb-4">Cold that feels<br>supportive, not extreme</h3>
                     <p class="text-rapid-dark/70 mb-6">
                         Guided, time-based plunges with clear instructions and options and designed to work for a wide range.
                     </p>
-                    <ul class="space-y-3 text-rapid-dark/70 mb-6">
-                        <li class="flex items-start gap-2">
-                            <span class="text-rapid-olive">✓</span>
-                            <span><strong>Welcoming for first-timers.</strong> Clear guidance, structured timing, duration, and time to stay out feeling proud — not shocked.</span>
+                    <ul class="space-y-4 text-rapid-dark/70 mb-6">
+                        <li>
+                            <strong class="text-rapid-dark">1. Welcoming for first-timers.</strong><br>
+                            Clear guidance, structured timing, duration, and time to stay out feeling proud — not shocked.
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-rapid-olive">✓</span>
-                            <span><strong>Effective for experienced.</strong> Continuous filtration and monitoring so every plunge starts clean.</span>
+                        <li>
+                            <strong class="text-rapid-dark">2. Effective for experienced.</strong><br>
+                            Continuous filtration and monitoring so every plunge starts clean.
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-rapid-olive">✓</span>
-                            <span><strong>Built on research.</strong> Protocol cold cycles that fit into a 45-60 minute session actually works.</span>
+                        <li>
+                            <strong class="text-rapid-dark">3. Built on research.</strong><br>
+                            Protocol cold cycles that fit into a 45-60 minute session actually work.
                         </li>
                     </ul>
-                    <a href="cold-plunge.html" class="text-rapid-olive font-medium hover:underline">Discover cold plunge science →</a>
+                    <a href="cold-plunge.html" class="text-rapid-olive font-semibold hover:underline">Discover cold plunge science →</a>
                 </div>
-                <div class="relative h-[400px] rounded-rapid overflow-hidden order-1 md:order-2">
-                    <img src="images/Rectangle 108.png" alt="RAPID Relaxation" class="absolute inset-0 w-full h-full object-cover">
+                <div class="order-1 md:order-2">
+                    <img src="images/Rectangle 108.png" alt="RAPID Cold Plunge" class="w-full h-[400px] object-cover" style="border-radius: 2px;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Our Story -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-medium text-center mb-16">Our Story</h2>
+    <section class="py-20 bg-rapid-dark">
+        <div class="max-w-[1440px] mx-auto px-12">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Story</h2>
             
-            <div class="max-w-3xl mx-auto">
-                <h3 class="text-rapid-olive text-sm font-medium tracking-wider mb-4">Who We Are</h3>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-rapid-olive text-xs font-semibold tracking-[0.2em] mb-4">Who We Are</p>
                 <p class="text-white/80 text-lg mb-6">
                     RAPID is the best Cold Plunge & Sauna Experience in San Diego.
                 </p>
                 <p class="text-white/70 mb-6">
                     Our vision is rooted in the Finnish tradition of truly hot, generous saunas paired with crisp, refreshing cold plunges — all perfectly balanced together. It's a practice that supports both body and mind.
                 </p>
-                <p class="text-white/70 mb-8">
+                <p class="text-white/70">
                     Our focus is simple: help you feel better in your body with predictable, science-backed rituals you can build into a routine.
                 </p>
-                <a href="about.html" class="text-rapid-olive font-medium hover:underline">Read our full story →</a>
             </div>
         </div>
     </section>
 
     <!-- Stats -->
-    <section class="py-16 border-y border-white/10">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-3 gap-8 text-center">
+    <section class="py-16 bg-rapid-dark border-t border-b border-white/10">
+        <div class="max-w-[1440px] mx-auto px-12">
+            <div class="grid grid-cols-3 gap-8 text-center mb-12">
                 <div>
-                    <div class="text-4xl font-light text-rapid-olive mb-2">2</div>
+                    <div class="text-5xl font-bold text-rapid-olive mb-2">2</div>
                     <div class="text-white/60 text-sm">Founders focused<br>on wellness</div>
                 </div>
                 <div>
-                    <div class="text-4xl font-light text-rapid-olive mb-2">4x</div>
+                    <div class="text-5xl font-bold text-rapid-olive mb-2">4x</div>
                     <div class="text-white/60 text-sm">Air is exchanged<br>in hot & cold</div>
                 </div>
                 <div>
-                    <div class="text-4xl font-light text-rapid-olive mb-2">100%</div>
+                    <div class="text-5xl font-bold text-rapid-olive mb-2">100%</div>
                     <div class="text-white/60 text-sm">Mood-first<br>experience</div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a href="about.html" class="inline-block bg-rapid-olive text-white px-6 py-4 text-sm font-semibold btn-shadow" style="border-radius: 2px;">
+                    Discover the Practice
+                </a>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="py-20">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-4xl font-medium text-center mb-12">Frequently Asked Questions</h2>
+    <section class="py-20 bg-rapid-dark">
+        <div class="max-w-3xl mx-auto px-12">
+            <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
             
             <div class="space-y-4">
-                <details class="bg-rapid-gray rounded-rapid p-6 group">
-                    <summary class="flex items-center justify-between cursor-pointer font-medium">
+                <details class="bg-rapid-gray p-6 group" style="border-radius: 2px;">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold">
                         When will RAPID open?
-                        <span class="text-rapid-olive group-open:rotate-180 transition-transform">▼</span>
+                        <span class="text-rapid-olive">▼</span>
                     </summary>
-                    <p class="text-white/70 mt-4">We expect to open in the coming months. Custom engineering and precision components require time to source and install. Follow along the construction update and sign up for the list to receive updates and presale access.</p>
+                    <p class="text-white/70 mt-4">We expect to open in the coming months. Custom engineering and precision components require time to source and install. Sign up for the list to receive updates and presale access.</p>
                 </details>
                 
-                <details class="bg-rapid-gray rounded-rapid p-6 group">
-                    <summary class="flex items-center justify-between cursor-pointer font-medium">
+                <details class="bg-rapid-gray p-6 group" style="border-radius: 2px;">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold">
                         How long is a typical session?
-                        <span class="text-rapid-olive group-open:rotate-180 transition-transform">▼</span>
+                        <span class="text-rapid-olive">▼</span>
                     </summary>
                     <p class="text-white/70 mt-4">Most members spend 45-60 minutes per visit, alternating between sauna and cold plunge with rest periods in between.</p>
                 </details>
                 
-                <details class="bg-rapid-gray rounded-rapid p-6 group">
-                    <summary class="flex items-center justify-between cursor-pointer font-medium">
+                <details class="bg-rapid-gray p-6 group" style="border-radius: 2px;">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold">
                         Do you offer a warranty?
-                        <span class="text-rapid-olive group-open:rotate-180 transition-transform">▼</span>
+                        <span class="text-rapid-olive">▼</span>
                     </summary>
                     <p class="text-white/70 mt-4">We stand behind our experience. If you're not satisfied with your first visit, we'll make it right.</p>
                 </details>
                 
-                <details class="bg-rapid-gray rounded-rapid p-6 group">
-                    <summary class="flex items-center justify-between cursor-pointer font-medium">
+                <details class="bg-rapid-gray p-6 group" style="border-radius: 2px;">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold">
                         How can I contact support?
-                        <span class="text-rapid-olive group-open:rotate-180 transition-transform">▼</span>
+                        <span class="text-rapid-olive">▼</span>
                     </summary>
-                    <p class="text-white/70 mt-4">Email us at info@rapidcoldplunge.com or call (858) 788-1313. We're happy to answer any questions.</p>
+                    <p class="text-white/70 mt-4">Email us at info@rapidcoldplunge.com or call (858) 788-1313.</p>
                 </details>
             </div>
         </div>
@@ -338,46 +349,41 @@
 
     <!-- CTA -->
     <section class="py-20 bg-rapid-cream text-rapid-dark">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-medium mb-4">Ready to make hot & cold part of your week?</h2>
-            <p class="text-rapid-dark/70 mb-8">Join the Founders Club for even on lifetime priority simply get on the list to discover updates and be notified.</p>
-            <a href="#founders-club" class="inline-block bg-rapid-olive hover:bg-rapid-olive-dark text-white px-8 py-4 rounded-rapid font-semibold shadow-rapid transition">
-                Join Founders Club
+        <div class="max-w-4xl mx-auto px-12 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to make hot & cold part of your week?</h2>
+            <p class="text-rapid-dark/70 mb-8">Join the Founders Club to lock in lifetime pricing or simply get on the list for day-pass updates when we launch.</p>
+            <a href="#founders-club" class="inline-block bg-rapid-orange text-white px-8 py-4 text-sm font-semibold btn-shadow" style="border-radius: 2px;">
+                Become a Founding Member
             </a>
         </div>
     </section>
 
-    <!-- Founders Club Signup -->
-    <section id="founders-club" class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Stay in the Loop -->
+    <section id="founders-club" class="py-20 bg-rapid-dark relative">
+        <div class="absolute inset-0">
+            <img src="images/image 6.png" alt="RAPID Interior" class="w-full h-full object-cover opacity-60">
+        </div>
+        <div class="relative z-10 max-w-[1440px] mx-auto px-12">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
                 <div>
-                    <p class="text-rapid-olive text-sm font-medium tracking-wider mb-4">Stay in the loop</p>
-                    <p class="text-white/70 mb-4">
-                        Construction progress, VIP access, behind the scenes — be the first to know. Join 150+ people that are in the list to see exclusive content and get priority access.
+                    <h3 class="text-3xl font-bold mb-4">Stay in the loop</h3>
+                    <p class="text-white/70 mb-8">
+                        Get construction updates, early access invitations, and simple sauna & cold plunge rituals you can try at home.
                     </p>
-                    <div class="relative h-[300px] rounded-rapid overflow-hidden">
-                        <img src="images/Rectangle 94.png" alt="RAPID interior" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="flex gap-4">
+                        <input type="email" placeholder="Email address" class="flex-1 bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/50" style="border-radius: 2px;">
+                        <button class="bg-rapid-olive text-white px-6 py-3 font-semibold btn-shadow" style="border-radius: 2px;">Join Waitlist</button>
                     </div>
                 </div>
-                <div class="bg-rapid-gray p-8 rounded-rapid">
-                    <h3 class="text-2xl font-medium mb-2">Join the <span class="text-rapid-olive">RAPID</span> Founder's Club</h3>
-                    <p class="text-white/70 mb-6">
-                        Unlock special perks, opening updates, and exclusive invitation about our grand opening party by leaving your email below.
-                    </p>
-                    <p class="text-white/70 text-sm mb-6">
-                        Be among the first to experience the ultimate cold plunge and Finnish sauna experience by signing up to receive exclusive updates before our grand opening.
-                    </p>
-                    <p class="text-white/50 text-sm mb-6">The RAPID Founder's Club is completely free to join!</p>
-                    
+                <div class="bg-white/95 text-rapid-dark p-8" style="border-radius: 8px;">
+                    <h4 class="text-xl font-bold mb-2">Contact us</h4>
+                    <p class="text-rapid-dark/70 text-sm mb-6">Have questions about memberships, bookings, or the Founders Club? Send us a message.</p>
                     <form class="space-y-4">
-                        <div>
-                            <label class="text-white/70 text-sm mb-2 block">Your Email</label>
-                            <input type="email" placeholder="john@gmail.com" class="w-full bg-white/10 border border-white/20 rounded px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-rapid-olive">
-                        </div>
-                        <button type="submit" class="w-full bg-rapid-olive hover:bg-rapid-olive-dark text-white py-3 rounded-rapid font-semibold shadow-rapid transition">
-                            Join the Club!
-                        </button>
+                        <input type="text" placeholder="Full name" class="w-full border border-rapid-dark/20 px-4 py-3 text-rapid-dark" style="border-radius: 2px;">
+                        <input type="email" placeholder="john@gmail.com" class="w-full border border-rapid-dark/20 px-4 py-3 text-rapid-dark" style="border-radius: 2px;">
+                        <input type="tel" placeholder="1098374683389" class="w-full border border-rapid-dark/20 px-4 py-3 text-rapid-dark" style="border-radius: 2px;">
+                        <textarea placeholder="How can we help?" rows="3" class="w-full border border-rapid-dark/20 px-4 py-3 text-rapid-dark resize-none" style="border-radius: 2px;"></textarea>
+                        <button type="submit" class="w-full bg-rapid-olive text-white py-3 font-semibold btn-shadow" style="border-radius: 2px;">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -385,41 +391,41 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-rapid-cream text-rapid-dark py-16">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-12">
+    <footer class="py-16 bg-rapid-cream text-rapid-dark">
+        <div class="max-w-[1440px] mx-auto px-12">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div class="md:col-span-2">
-                    <div class="text-2xl font-semibold tracking-wider mb-4">RAP<span class="text-rapid-olive">I</span>D</div>
+                    <div class="text-xl font-bold mb-4">RAPID</div>
                     <p class="text-rapid-dark/70 max-w-sm">
                         The premier contrast therapy destination in Southern California. Recover, reset, and feel at home in your body.
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-medium mb-4">Company</h4>
+                    <h4 class="font-bold mb-4">Company</h4>
                     <ul class="space-y-2 text-rapid-dark/70">
-                        <li><a href="about.html" class="hover:text-rapid-olive transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-rapid-olive transition">Careers</a></li>
-                        <li><a href="contact.html" class="hover:text-rapid-olive transition">Contact</a></li>
-                        <li><a href="#" class="hover:text-rapid-olive transition">Privacy Policy</a></li>
+                        <li><a href="about.html" class="hover:text-rapid-olive">About Us</a></li>
+                        <li><a href="#" class="hover:text-rapid-olive">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-rapid-olive">Contact</a></li>
+                        <li><a href="#" class="hover:text-rapid-olive">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-medium mb-4">Visit</h4>
+                    <h4 class="font-bold mb-4">Visit</h4>
                     <ul class="space-y-2 text-rapid-dark/70">
-                        <li>2990 Midway Drive</li>
-                        <li>San Diego, CA 92110</li>
-                        <li class="pt-2"><a href="https://instagram.com" class="hover:text-rapid-olive transition">Instagram</a></li>
-                        <li><a href="https://twitter.com" class="hover:text-rapid-olive transition">Twitter</a></li>
+                        <li>123 Wellness Blvd</li>
+                        <li>Los Angeles, CA 90210</li>
+                        <li class="pt-2"><a href="#" class="hover:text-rapid-olive">Instagram</a></li>
+                        <li><a href="#" class="hover:text-rapid-olive">Twitter</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="border-t border-rapid-dark/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-rapid-dark/60">
+            <div class="border-t border-rapid-dark/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-rapid-dark/60">
                 <p>© 2025 Rapid Wellness. All rights reserved.</p>
                 <p>Chat with us now</p>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
-<!-- deployed Wed Mar 11 21:00:40 PDT 2026 -->
