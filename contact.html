@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RAPID Cold Plunge & Sauna</title>
+    <meta name="description" content="Get in touch with RAPID Cold Plunge & Sauna. Located at 2990 Midway Drive, San Diego, CA 92110.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rapid-dark': '#0a0a0a',
+                        'rapid-olive': '#8B9A5B',
+                        'rapid-olive-dark': '#6B7A4B',
+                        'rapid-cream': '#F5F0E6',
+                        'rapid-gray': '#1a1a1a',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rapid-dark text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-rapid-dark/90 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/" class="text-2xl font-semibold tracking-wider">RAP<span class="text-rapid-olive">I</span>D</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-white/80 hover:text-white transition">Home</a>
+                <a href="sauna.html" class="text-white/80 hover:text-white transition">Sauna</a>
+                <a href="cold-plunge.html" class="text-white/80 hover:text-white transition">Cold Plunge</a>
+                <a href="pricing.html" class="text-white/80 hover:text-white transition">Pricing</a>
+                <a href="about.html" class="text-white/80 hover:text-white transition">About Us</a>
+            </div>
+            <a href="index.html#founders-club" class="bg-rapid-olive hover:bg-rapid-olive-dark text-white px-5 py-2.5 rounded text-sm font-medium transition">Join Founders Club</a>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="pt-32 pb-20 min-h-screen">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Left Column - Contact Info -->
+                <div class="relative">
+                    <h1 class="text-4xl md:text-5xl font-medium mb-6">We'd love to hear from you.</h1>
+                    <p class="text-rapid-olive mb-2">We are completing construction and not yet open.</p>
+                    <p class="text-white/70 mb-12">
+                        For updates or inquiries feel free to reach out via email, phone or text!
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="text-rapid-olive text-2xl">📍</div>
+                            <div>
+                                <h3 class="font-medium mb-1">Address</h3>
+                                <p class="text-white/70">2990 Midway Drive, 92110<br>San Diego, CA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="text-rapid-olive text-2xl">📞</div>
+                            <div>
+                                <h3 class="font-medium mb-1">Phone</h3>
+                                <p class="text-white/70"><a href="tel:+18587881313" class="hover:text-rapid-olive transition">(858) 788-1313</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="text-rapid-olive text-2xl">✉️</div>
+                            <div>
+                                <h3 class="font-medium mb-1">Email</h3>
+                                <p class="text-white/70"><a href="mailto:info@rapidcoldplunge.com" class="hover:text-rapid-olive transition">info@rapidcoldplunge.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="text-rapid-olive text-2xl">🔗</div>
+                            <div>
+                                <h3 class="font-medium mb-1">Follow Us!</h3>
+                                <div class="flex gap-4 mt-2">
+                                    <a href="https://facebook.com" class="text-white/70 hover:text-rapid-olive transition text-xl">f</a>
+                                    <a href="https://instagram.com" class="text-white/70 hover:text-rapid-olive transition text-xl">📷</a>
+                                    <a href="https://tiktok.com" class="text-white/70 hover:text-rapid-olive transition text-xl">♪</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Background Image -->
+                    <div class="absolute bottom-0 left-0 right-0 -z-10 h-[400px] opacity-30">
+                        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1200" alt="RAPID interior" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                </div>
+                
+                <!-- Right Column - Contact Form -->
+                <div class="bg-rapid-cream text-rapid-dark p-8 rounded-lg">
+                    <h2 class="text-2xl font-medium mb-2">Contact us</h2>
+                    <p class="text-rapid-dark/70 mb-6">
+                        Have questions about memberships, bookings, or the Founders Club? Send us a message.
+                    </p>
+                    
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Name" class="w-full bg-transparent border-b border-rapid-dark/20 py-3 text-rapid-dark placeholder-rapid-dark/50 focus:outline-none focus:border-rapid-olive">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email" class="w-full bg-transparent border-b border-rapid-dark/20 py-3 text-rapid-dark placeholder-rapid-dark/50 focus:outline-none focus:border-rapid-olive">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Phone Number" class="w-full bg-transparent border-b border-rapid-dark/20 py-3 text-rapid-dark placeholder-rapid-dark/50 focus:outline-none focus:border-rapid-olive">
+                        </div>
+                        <div>
+                            <textarea placeholder="Message" rows="4" class="w-full bg-transparent border-b border-rapid-dark/20 py-3 text-rapid-dark placeholder-rapid-dark/50 focus:outline-none focus:border-rapid-olive resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-rapid-dark hover:bg-rapid-gray text-white py-4 rounded font-medium transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rapid-cream text-rapid-dark py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="md:col-span-2">
+                    <div class="text-2xl font-semibold tracking-wider mb-4">RAP<span class="text-rapid-olive">I</span>D</div>
+                    <p class="text-rapid-dark/70 max-w-sm">
+                        The premier contrast therapy destination in Southern California. Recover, reset, and feel at home in your body.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-4">Company</h4>
+                    <ul class="space-y-2 text-rapid-dark/70">
+                        <li><a href="about.html" class="hover:text-rapid-olive transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-rapid-olive transition">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-rapid-olive transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-rapid-olive transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-4">Visit</h4>
+                    <ul class="space-y-2 text-rapid-dark/70">
+                        <li>2990 Midway Drive</li>
+                        <li>San Diego, CA 92110</li>
+                        <li class="pt-2"><a href="https://instagram.com" class="hover:text-rapid-olive transition">Instagram</a></li>
+                        <li><a href="https://twitter.com" class="hover:text-rapid-olive transition">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-rapid-dark/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-rapid-dark/60">
+                <p>© 2025 Rapid Wellness. All rights reserved.</p>
+                <p>Chat with us now</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
